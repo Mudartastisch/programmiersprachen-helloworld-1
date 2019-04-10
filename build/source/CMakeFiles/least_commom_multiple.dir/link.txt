@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11  -rdynamic CMakeFiles/least_commom_multiple.dir/lcm.cpp.o  -o least_commom_multiple 

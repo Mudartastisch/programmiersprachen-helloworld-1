@@ -1,0 +1,8 @@
+/home/qeli3049/VSC/PS_1/programmiersprachen-helloworld-1/build/CMakeFiles/rebuild_cache.dir
+/home/qeli3049/VSC/PS_1/programmiersprachen-helloworld-1/build/CMakeFiles/edit_cache.dir
+/home/qeli3049/VSC/PS_1/programmiersprachen-helloworld-1/build/source/CMakeFiles/rebuild_cache.dir
+/home/qeli3049/VSC/PS_1/programmiersprachen-helloworld-1/build/source/CMakeFiles/edit_cache.dir
+/home/qeli3049/VSC/PS_1/programmiersprachen-helloworld-1/build/source/CMakeFiles/mile_to_kilometer.dir
+/home/qeli3049/VSC/PS_1/programmiersprachen-helloworld-1/build/source/CMakeFiles/least_commom_multiple.dir
+/home/qeli3049/VSC/PS_1/programmiersprachen-helloworld-1/build/source/CMakeFiles/helloworld.dir
+/home/qeli3049/VSC/PS_1/programmiersprachen-helloworld-1/build/source/CMakeFiles/tests.dir
