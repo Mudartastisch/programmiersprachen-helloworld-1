@@ -4,6 +4,7 @@
 
 
 int gcd(int a, int b) {
+  //using Euclid's algorithm
   if (b == 0) return a;
   return gcd(b, a%b);
 }
@@ -19,12 +20,12 @@ int checkSum(int i) {
 	int result = 0;
 	int temp;
 	while (i > 0) {
-		temp = i % 10;
-		i = i / 10;
-		result = result + temp;
+    temp = i % 10; //get last digit
+		i = i / 10; //reduce i by last digit
+		result = result + temp; //add last digit to result
 	}
-	if (result > 10) {
-		return checkSum(result);
+	if (result >= 10) {
+		return checkSum(result); //do again if result more then two digits
 	}
 	else {
 		return result;
@@ -34,6 +35,20 @@ int checkSum(int i) {
 TEST_CASE("describe_checkSum", "[checkSum]") {
   REQUIRE(checkSum(117516) == 3);
   REQUIRE(checkSum(380511905) == 5);
+}
+
+int sumMultiples(int a, int b) {
+	int sum = 0; // storage
+	for (int run = a; run <= b; run++) {
+		if (run % 3 == 0 || run % 5 == 0) {
+			sum = sum + run;
+		}
+	}
+	return sum;
+}
+
+TEST_CASE("describe_sumMultiples", "[sumMultiples]") {
+  REQUIRE(sumMultiples(1, 1000) == 234168);
 }
 
 int main(int argc, char*argv[]){
