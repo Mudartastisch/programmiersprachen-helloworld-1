@@ -51,6 +51,38 @@ TEST_CASE("describe_sumMultiples", "[sumMultiples]") {
   REQUIRE(sumMultiples(1, 1000) == 234168);
 }
 
+double fract(double d){
+  if(d > 0) {
+    return (d - floor(d));
+  }
+  else{
+    return (d - ceil(d));
+  }
+}
+
+TEST_CASE("describe_fract", "[fract]") {
+  REQUIRE(fract(5.134) == Approx(0.134));
+  REQUIRE(fract(-5.134) == Approx(-0.134));
+}
+
+double cylinder_volume(float radius, float hight) {
+	return (M_PI*radius*radius*hight);
+}
+
+double cylinder_area(float radius, float hight) {	
+	return (2 * M_PI*radius*radius + 2 * M_PI*radius*hight);
+}
+
+TEST_CASE("describe_cylinder_volume", "[cylinder_volume]") {
+  REQUIRE(cylinder_volume(10,5) == Approx(1570.8));
+  REQUIRE(cylinder_volume(3,7) == Approx(197.92));
+}
+
+TEST_CASE("describe_cylinder_area", "[cylinder_area]") {
+  REQUIRE(cylinder_area(10,5) == Approx(942.478));
+  REQUIRE(cylinder_area(3,7) == Approx(188.496));
+}
+
 int main(int argc, char*argv[]){
   return Catch::Session().run(argc, argv);
 }
