@@ -38,7 +38,7 @@ TEST_CASE("describe_checkSum", "[checkSum]") {
 }
 
 int sumMultiples(int a, int b) {
-	int sum = 0; // storage
+	int sum = 0;
 	for (int run = a; run <= b; run++) {
 		if (run % 3 == 0 || run % 5 == 0) {
 			sum = sum + run;
@@ -53,10 +53,10 @@ TEST_CASE("describe_sumMultiples", "[sumMultiples]") {
 
 double fract(double d){
   if(d > 0) {
-    return (d - floor(d));
+    return (d - floor(d)); //lower int of double
   }
   else{
-    return (d - ceil(d));
+    return (d - ceil(d)); //higher int of negative double
   }
 }
 
@@ -82,6 +82,43 @@ TEST_CASE("describe_cylinder_area", "[cylinder_area]") {
   REQUIRE(cylinder_area(10,5) == Approx(942.478));
   REQUIRE(cylinder_area(3,7) == Approx(188.496));
 }
+
+int factorial(int i) {
+  if(i == 0) return 0;
+	if (i == 1) return 1;
+	else return i*(factorial(i - 1)); //recursive multiplication
+}
+
+TEST_CASE("describe_factorial", "[factorial]") {
+  REQUIRE(factorial(1) == 1);
+	REQUIRE(factorial(2) == 2);
+  REQUIRE(factorial(3) == 6);
+}
+
+bool isPrime(int s) {
+	if (s == 2 || s == 1) {
+		return true;
+	}
+	if (s % 2 == 0) {
+		return false;
+	}
+	for (int i = 3; i*i <= s; i = i + 2) {
+		if (s%i == 0) { 
+			return false;
+		}
+	}
+	return true;
+}
+
+TEST_CASE("describe_is_prime", "[is_prime]") {
+  REQUIRE(isPrime(1) == true);
+	REQUIRE(isPrime(2) == true);
+	REQUIRE(isPrime(3) == true);
+	REQUIRE(isPrime(4) == false);
+	REQUIRE(isPrime(7) == true);
+	REQUIRE(isPrime(42) == false);
+}
+
 
 int main(int argc, char*argv[]){
   return Catch::Session().run(argc, argv);
