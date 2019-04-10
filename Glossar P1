@@ -1,0 +1,29 @@
+C++ - Programming language
+Sourcecode - Human readable code
+Compiler - Transforms sourcecode to machine code
+Linker - Combines object code to create a programm
+Objectcode - Language step between source and machine code
+Executable - Programm that can be run on any machine with corrosponding libraries
+main() - start of any programm
+#include - add existing external sourcecode to your programm
+Comment - A thing you should add but always forgett
+Header - Contains functions definition
+Programm - Collection of machinecode that can do something or nothing
+Output - result of function
+std::cout - Prints a message to your console (standard output)
+std::cin - Reads from your console (standard input)
+<< - append previous statement
+>> - funnel information
+Function - code that can be called by using function(args)
+Function Signature - includes the function's name and the number, order and type of its formal parameters
+Declaration - Describes a function with a name and number, order and type of parameters
+Definition - gives formal parameters names and describes inner workings
+Type - give the compiler an indication how much storage to reserve for a variable
+Type conversion - artifical moving of variable data into another type container and preserving as much data as defined
+Variable - combination of a name and type
+Name - String given to a storage container of a specified type
+Value - Content of a storage container
+initialize - assignment of an initial value to a storage container
+assign -  change the value of a variable
+const - promise that the assigned values does not change
+scope - part of a code where the varible and its value are valid for the code
