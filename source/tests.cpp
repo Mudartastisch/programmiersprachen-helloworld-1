@@ -96,18 +96,18 @@ TEST_CASE("describe_factorial", "[factorial]") {
 }
 
 bool isPrime(int s) {
-	if (s == 2 || s == 1) {
+	if (s == 2 || s == 1) { //catch most simple cases
 		return true;
 	}
-	if (s % 2 == 0) {
+	if (s % 2 == 0) { //ignore all even numbers
 		return false;
 	}
-	for (int i = 3; i*i <= s; i = i + 2) {
+	for (int i = 3; i*i <= s; i = i + 2) { //increment odd numbers 
 		if (s%i == 0) { 
-			return false;
+			return false; //break out if an odd number modulo is 0
 		}
 	}
-	return true;
+	return true; //if the runner reaches the number without it, it must be a prime
 }
 
 TEST_CASE("describe_is_prime", "[is_prime]") {
