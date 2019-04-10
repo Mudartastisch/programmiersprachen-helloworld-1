@@ -38,3 +38,10 @@ CMakeCache.txt
 cmake_install.cmake
 Makefile
 CMakeFiles
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
