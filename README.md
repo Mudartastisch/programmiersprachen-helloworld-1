@@ -15,3 +15,6 @@ cd source
 ./helloworld
 ./tests
 ```
+
+Too much trouble with .vscode folder
+needed https://rtyley.github.io/bfg-repo-cleaner/
