@@ -84,7 +84,7 @@ TEST_CASE("describe_cylinder_area", "[cylinder_area]") {
 }
 
 int factorial(int i) {
-  if(i == 0) return 0;
+  if (i == 0) return 0;
 	if (i == 1) return 1;
 	else return i*(factorial(i - 1)); //recursive multiplication
 }

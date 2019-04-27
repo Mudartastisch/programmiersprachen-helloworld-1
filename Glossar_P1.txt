@@ -6,7 +6,7 @@ Objectcode - Language step between source and machine code
 Executable - Programm that can be run on any machine with corrosponding libraries
 main() - start of any programm
 #include - add existing external sourcecode to your programm
-Comment - A thing you should add but always forgett
+Comment - A thing you should add but always forget
 Header - Contains functions definition
 Programm - Collection of machinecode that can do something or nothing
 Output - result of function
